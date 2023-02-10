@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Color Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <input type="color" class="color-picker" />
+        <div class="custom-select" width="200px">
+          <select name="modes" id="modes">
+            <option value="select">Select a Mode</option>
+            <option value="Monochrome">Monochrome</option>
+            <option value="Monochrome-dark">Monochrome-dark</option>
+            <option value="Monochrome-light">Monochrome-light</option>
+            <option value="Analogic">Analogic</option>
+            <option value="Complement">Complement</option>
+            <option value="Analogic-complement">Analogic-complement</option>
+            <option value="Triad">Triad</option>
+          </select>
+        </div>
+        <button id="color-btn">Get color scheme</button>
+      </form>
+      <div class="color-palette">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <p class="color-name">#000000</p>
+        <p class="color-name">#000000</p>
+        <p class="color-name">#000000</p>
+        <p class="color-name">#000000</p>
+        <p class="color-name">#000000</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
